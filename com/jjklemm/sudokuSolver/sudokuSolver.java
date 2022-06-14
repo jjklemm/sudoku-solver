@@ -11,16 +11,16 @@ package com.jjklemm.sudokuSolver;
 import javax.swing.*;
 
 public class sudokuSolver extends JFrame {
-    JButton newBoardButton = new JButton("New Board");
-    //JButton solveBoardButton = new JButton("Solve Board")
+    //JButton newBoardButton = new JButton("New Board");
+    JButton solveBoardButton = new JButton("Solve Puzzle");
 
     public sudokuSolver() {
         super("Sudoku Solver");
         setSize(1200, 900);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel pane = new JPanel();
-        pane.add(newBoardButton);
-        add(pane);
+        JPanel solvePane = new JPanel();
+        solvePane.add(solveBoardButton);
+        add(solvePane);
         setVisible(true);
     }
 
