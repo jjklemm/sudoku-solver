@@ -41,8 +41,8 @@ public class sudokuSolver extends JFrame {
         controlPane.add(board[0][0]);
         controlPane.add(board[0][1]);
         add(controlPane);
+        // TODO change board back to visible
         setVisible(false);
-        System.out.println("Board goes here...");
 
         // create temp board contents for testing
         int puzzle[][] = new int[GRID_SIZE][GRID_SIZE];
@@ -63,7 +63,6 @@ public class sudokuSolver extends JFrame {
 
         // print the starting board
         printBoard(puzzle);
-
 
     }
 
@@ -103,3 +102,4 @@ public class sudokuSolver extends JFrame {
     }
 
 }
+
